@@ -1,7 +1,9 @@
 #include "UsbMmidd.hpp"
 #include "UsbMmiddData.hpp"
 
-#include "pch.hpp"
+#include <Windows.h>
+#include <processthreadsapi.h>
+#include <format>
 
 UsbMmidd* UsbMmidd::GetInstance()
 {

@@ -1,5 +1,10 @@
 #include "UsbMmiddData.hpp"
-#include "pch.hpp"
+
+#include <direct.h>
+#include <Windows.h>
+#include <fstream>
+#include <filesystem>
+#include <setupapi.h>
 
 UsbMmiddData* UsbMmiddData::GetInstance()
 {
